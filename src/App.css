@@ -15,36 +15,20 @@ a {
 }
 
 .gradient__bg {
-    background: -moz-radial-gradient(
-        circle at 3% 20%,
-        rgba(95, 57, 160, 1) 0%,
-        rgba(0, 0, 0, 1) 99%
-    );
+    background: radial-gradient(circle at 3% 20%, #5f39a0 0%, #000000 100%);
+
     background: -webkit-radial-gradient(
         circle at 3% 20%,
-        rgba(95, 57, 160, 1) 0%,
-        rgba(0, 0, 0, 1) 99%
-    );
-    background: -o-radial-gradient(
-        circle at 3% 20%,
-        rgba(95, 57, 160, 1) 0%,
-        rgba(0, 0, 0, 1) 99%
-    );
-    background: -ms-radial-gradient(
-        circle at 3% 20%,
-        rgba(95, 57, 160, 1) 0%,
-        rgba(0, 0, 0, 1) 99%
-    );
-    background: radial-gradient(
-        circle at 3% 20%,
-        rgba(95, 57, 160, 1) 0%,
-        rgba(0, 0, 0, 1) 99%
+        #5f39a0 0%,
+        #000000 100%
     );
 }
 
 .gradient__text {
-    background: var(--gradient__text);
+    background-image: var(--gradient-text);
     background-clip: text;
+    color: transparent;
+
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -58,9 +42,9 @@ a {
 }
 
 .scale-up-center {
-    -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1)
+    -webkit-animation: scale-up-center 0.2s cubic-bezier(0.39, 0.575, 0.565, 1)
         both;
-    animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+    animation: scale-up-center 0.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 
 @-webkit-keyframes scale-up-center {
@@ -85,19 +69,19 @@ a {
 }
 
 @media screen and (max-width: 700px) {
-    .section__padding: {
+    .section__padding {
         padding: 4rem;
     }
-    .section__margin: {
+    .section__margin {
         margin: 4rem;
     }
 }
 
 @media screen and (max-width: 550px) {
-    .section__padding: {
+    .section__padding {
         padding: 4rem 2rem;
     }
-    .section__margin: {
+    .section__margin {
         margin: 4rem 2rem;
     }
 }

@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 6rem;
+    padding: 2rem 5rem 2rem 5rem;
 }
 .gpt3__navbar-links {
     flex: 1;
@@ -11,12 +11,13 @@
     align-items: center;
 }
 .gpt3__navbar-links_logo {
-    margin-right: 2rem;
+    margin: 0 2rem 0 0;
 }
 
 .gpt3__navbar-links_logo img {
-    width: 62.56px;
-    height: 16.02px;
+    width: 122.56px;
+    height: 76.02px;
+    margin: 0 0 0 0;
 }
 
 .gpt3__navbar-links_container {
@@ -47,7 +48,7 @@
 .gpt3__navbar-menu_container button {
     padding: 0.3rem 1rem;
     color: #fff;
-    background: #ff4820;
+    background: #ff5630;
     font-family: var(--font-family);
     font-weight: 500;
     font-size: 18px;
@@ -73,7 +74,7 @@
     align-items: flex-end;
     flex-direction: column;
     text-align: end;
-    background: var(--color-footer);
+    background: #8a61d2;
     padding: 2rem;
     position: absolute;
     top: 40px;
@@ -85,8 +86,8 @@
 }
 
 .gpt3__navbar-menu_container p {
-    margin: 1rem;
     text-align: center;
+    padding: 0 0 1rem 0;
 }
 
 .gpt3__navbar-menu_container-links-sign {
@@ -103,27 +104,40 @@
 
     .gpt3__navbar-menu {
         display: flex;
+        padding-left: 1rem;
+        padding-top: 0.9rem;
+    }
+
+    .gpt3__navbar-links_logo {
+        margin: 0 1rem 0 0;
     }
 }
 
 @media screen and (max-width: 700px) {
     .gpt3__navbar {
-        padding: 2rem 4rem;
+        display: flex;
     }
 }
 
 @media screen and (max-width: 550px) {
-    .gpt3__navbar {
-        padding: 2rem;
-    }
     .gpt3__navbar-sign {
         display: none;
     }
     .gpt3__navbar-menu_container {
-        top: 20px;
+        top: 40px;
     }
 
     .gpt3__navbar-menu_container-links-sign {
         display: block;
+    }
+
+    .gpt3__navbar-links_logo {
+        display: flex;
+    }
+    .gpt3__navbar-menu_container {
+        min-width: 210px;
+    }
+    .gpt3__navbar {
+        padding: 0.4rem 1.5rem 2rem 1.5rem;
     }
 }
