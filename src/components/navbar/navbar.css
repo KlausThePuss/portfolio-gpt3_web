@@ -102,12 +102,18 @@
 .gpt3__navbar-menu_container-links {
     padding: 1rem 0 1rem 0;
 }
+.gpt3__navbar-menu_container-links :hover {
+    color: #c5e1ff;
+}
 
 .gpt3__navbar-menu_container-links-sign {
     display: none;
     text-align: center;
 
     padding: 1rem 0 1rem 0;
+}
+.gpt3__navbar-menu_container-links-sign :hover {
+    color: #c5e1ff;
 }
 
 @media screen and (max-width: 1054px) {
