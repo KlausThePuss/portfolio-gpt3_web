@@ -45,10 +45,26 @@
     cursor: pointer;
     user-select: none;
 }
-.gpt3__navbar-sign :hover {
+.gpt3__navbar-sign p:hover {
     color: #ffffff;
     text-shadow: 0px 0px 4px #ffffff;
 }
+.gpt3__navbar-sign p {
+    letter-spacing: 0.5px;
+
+    font-weight: bold;
+}
+
+/*  botton animation */
+
+.xd {
+}
+.xd:hover {
+    color: #ff5630;
+    background-color: #f1f1f1;
+}
+
+/*  botton animation */
 
 .gpt3__navbar-links_container :hover {
     color: #ffffff;
@@ -56,24 +72,53 @@
 }
 .gpt3__navbar-sign p {
     margin: 0 0.8rem 0 0;
+    font-size: 16px;
 }
 .gpt3__navbar-menu_container-links-sign p {
     font-size: 15px;
 }
+.gpt3__navbar-menu_container-links-sign p:hover {
+    color: #ffffff;
+    text-shadow: 0px 0px 4px #ffffff;
+}
 
 .gpt3__navbar-sign button,
 .gpt3__navbar-menu_container button {
-    padding: 0.2rem 0.5rem;
-    color: #fff;
-    background: #ff5630;
+    display: flex;
     font-family: var(--font-family);
-    font-weight: 500;
+    padding: 0.4rem 0.7rem;
+    border-radius: 9px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
     font-size: 16px;
-    line-height: 25px;
-    border-radius: 5px;
+    letter-spacing: 0.5px;
     border: none;
     outline: none;
+    text-decoration: none;
+    user-select: none;
+    background-color: #ff5630;
+}
+
+.gpt3__navbar-sign button {
+    display: flex;
+    font-family: var(--font-family);
+    padding: 0.4rem 0.7rem;
+    border-radius: 9px;
+    color: #fff;
     cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    user-select: none;
+    background-color: #ff5630;
+}
+.gpt3__navbar-sign button:hover {
+    color: #ff5630;
+    background-color: #f1f1f1;
 }
 
 .gpt3__navbar-menu {
@@ -110,6 +155,8 @@
 }
 .gpt3__navbar-menu_container-links {
     padding: 1rem 0 1rem 0;
+    display: flex;
+    flex-direction: column;
 }
 .gpt3__navbar-menu_container-links a:hover {
     font-size: 20px;
@@ -121,12 +168,19 @@
 }
 
 .gpt3__navbar-menu_container-links-sign {
-    display: none;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
     padding: 1rem 0 1rem 0;
 }
-.hover-button :hover {
+.gpt3__navbar-menu_container-links-sign button {
+    font-size: 14px;
+}
+.gpt3__navbar-menu_container-links-sign button:hover {
+    color: #ff5630;
+    background-color: #f1f1f1;
 }
 
 @media screen and (max-width: 1054px) {
@@ -147,6 +201,9 @@
     .gpt3__navbar {
         padding: 1rem 3rem 2rem 3rem;
     }
+    .gpt3__navbar-menu_container-links-sign {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 700px) {
@@ -165,17 +222,14 @@
     }
 
     .gpt3__navbar-menu_container-links-sign {
-        display: none;
+        display: flex;
         text-align: center;
-
+        justify-content: center;
+        flex-direction: column;
         padding: 1rem 0 1rem 0;
     }
     .gpt3__navbar-sign {
         display: none;
-    }
-
-    .gpt3__navbar-menu_container-links-sign {
-        display: block;
     }
 
     .gpt3__navbar-links_logo {
