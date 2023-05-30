@@ -15,13 +15,23 @@ a {
 }
 
 .gradient__bg {
-    background: radial-gradient(circle at 3% 20%, #5f39a0 0%, #000000 100%);
+    background: -moz-radial-gradient(circle at 5% 25%, #400670 0%, #14051f 30%);
 
+    /* safari 5.1+,chrome 10+ */
     background: -webkit-radial-gradient(
-        circle at 3% 20%,
-        #5f39a0 0%,
-        #000000 100%
+        circle at 5% 25%,
+        #400670 0%,
+        #14051f 30%
     );
+
+    /* opera 11.10+ */
+    background: -o-radial-gradient(circle at 5% 25%, #400670 0%, #14051f 30%);
+
+    /* ie 10+ */
+    background: -ms-radial-gradient(circle at 5% 25%, #400670 0%, #14051f 30%);
+
+    /* global 92%+ browsers support */
+    background: radial-gradient(circle at 5% 25%, #400670 0%, #14051f 30%);
 }
 
 .gradient__text {

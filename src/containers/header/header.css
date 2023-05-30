@@ -49,11 +49,12 @@
     outline: none;
     letter-spacing: 0.5px;
     min-height: 50px;
-    background: #8a61d2;
+    background: var(--color-footer);
     font-family: var(--font-family);
     font-size: 17px;
+    font-weight: 500;
     line-height: 27px;
-    color: #091521;
+    color: #ffffff;
     padding: 0 1.5rem;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
